@@ -6,43 +6,31 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-Open the file in read mode and handle it in test mode
-# Step 2: 
-Read the text using read() function.
- 
+Import numpy as np
+### Step 2: 
+Enter the input values
 ### Step 3: 
-Split the text using space separator.We assume that words in a sentance are separted by a space character
-
+Write python program for getting the word count from the contents of a file using command line arguments
 ### Step 4:  
-The length of the split list should equal the numbers of words in the test file
-
-
+Run the program
 ### Step 5: 
-You can refine the count by cleaning the string prior to splitting or validating the words after splitting
-
+Input the values
 ### Step 6: 
-End the program.
-
+End the program
 ## PROGRAM:
-Developed by : SHEETAL.R
-Registered number: 212223230206
-
-def wordcount(filename):
-    count=0
-    with open(filename,"r") as f:
-        for data in f:
-            words=data.split()
-            for word in words:
-                count+=1
-    print("Total number of words:",count)
-filename=input("Enter Filename:")
-wordcount(filename)
-
-### OUTPUT:
-![Screenshot 2024-05-09 105906](https://github.com/Sheetalshee/Word-Count/assets/144979107/a5750df9-65e6-412a-a7d5-91684018e274)
-![Screenshot 2024-05-09 110012](https://github.com/Sheetalshee/Word-Count/assets/144979107/93af050f-7a2d-47ff-9570-6c31968b3c32)
-
-
+### Developed by : SHEETAL.R
+### Register number :212223230206
+### program to find the number of words in a text file
+```
+num=0
+with open("story.txt","r") as f1:
+    for i in f1:
+        word=i.split()
+        num += len(word)
+print("The number of words are in the file is ",num)
+```
+## OUTPUT :
+![image](https://github.com/Sheetalshee/Word-Count/assets/144979107/c9842b15-63e6-4727-91f8-68283f573bc9)
 
 
 ## RESULT:
